@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        // Nome do Cinema
+        
         CinemaImpl cinemao = new CinemaImpl("Cinemao", "Av. São Pedro");
 
-        // ========== PRIMEIRA SESSÃO ==========
         Filme volta = new Filme("De Volta à Ação", 150, "14+");
         Sala sala3 = new Sala(3, 2); 
         Sessao sessaoVolta = new Sessao(volta, sala3, "25/12/2025 20:00", 0);
@@ -16,13 +15,11 @@ public class Main {
         cinemao.adicionarSala(sala3);
         cinemao.programarSessao(volta, sala3, sessaoVolta);
 
-        // Vendas para primeira sessão
         System.out.println("\n===== VENDAS PARA 'DE VOLTA À AÇÃO' =====");
         funcionario1.venderIngresso(daniel, sessaoVolta, 0); 
         funcionario1.venderIngresso(jubileu, sessaoVolta, 1); 
         funcionario1.venderIngresso(carlos, sessaoVolta, 0);  
 
-        // ========== SEGUNDA SESSÃO ==========
         Filme invencivel = new Filme("Invencível", 109, "12+");
         Sala sala5 = new Sala(5, 5);  
         Sessao sessaoInvencivel = new Sessao(invencivel, sala5, "21/02/2025 21:00", 0);
@@ -33,11 +30,9 @@ public class Main {
         cinemao.adicionarSala(sala5);
         cinemao.programarSessao(invencivel, sala5, sessaoInvencivel);
 
-        // Vendas para segunda sessão
         System.out.println("\n===== VENDAS PARA 'INVENCÍVEL' =====");
         funcionario2.venderIngresso(sandra, sessaoInvencivel, 0); 
 
-        // ========== RESUMOS FINAIS ==========
         System.out.println("\n===== RESUMO DAS SESSÕES =====");
         
         System.out.println(sessaoVolta);
@@ -50,8 +45,6 @@ public class Main {
         System.out.println("Ingressos vendidos: " + sessaoInvencivel.getIngressosVendidos());
         System.out.println("--------------------------------------");
 
-        // Encerramento
-        //sala3.removerSessao();
         cinemao.removerSala(sala3);
         cinemao.removerSala(sala5);
     }
