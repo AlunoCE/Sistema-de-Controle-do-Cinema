@@ -19,7 +19,7 @@ public class Main {
         funcionario1.venderIngresso(daniel, sessaoVolta, 0); 
         funcionario1.venderIngresso(jubileu, sessaoVolta, 1); 
         funcionario1.venderIngresso(carlos, sessaoVolta, 0);  
-
+        /*
         Filme invencivel = new Filme("Invencível", 109, "12+");
         Sala sala5 = new Sala(5, 5);  
         Sessao sessaoInvencivel = new Sessao(invencivel, sala5, "21/02/2025 21:00", 0);
@@ -32,20 +32,23 @@ public class Main {
 
         System.out.println("\n===== VENDAS PARA 'INVENCÍVEL' =====");
         funcionario2.venderIngresso(sandra, sessaoInvencivel, 0); 
-
-        System.out.println("\n===== RESUMO DAS SESSÕES =====");
+        */
+        
+        System.out.println("\n===== RESUMO DA SESSÃO =====");
         
         System.out.println(sessaoVolta);
         System.out.println("Capacidade da sala: " + sessaoVolta.getSala().getCapacidade());
         System.out.println("Ingressos vendidos: " + sessaoVolta.getIngressosVendidos());
         System.out.println("--------------------------------------");
 
+        /*
         System.out.println(sessaoInvencivel);
         System.out.println("Capacidade da sala: " + sessaoInvencivel.getSala().getCapacidade());
         System.out.println("Ingressos vendidos: " + sessaoInvencivel.getIngressosVendidos());
         System.out.println("--------------------------------------");
-
+        */
+        //sala3.removerSessao();
         cinemao.removerSala(sala3);
-        cinemao.removerSala(sala5);
+        //cinemao.removerSala(sala5);
     }
 }
