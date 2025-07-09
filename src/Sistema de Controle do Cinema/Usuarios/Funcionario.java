@@ -8,6 +8,11 @@ public class Funcionario {
     }
 
     public Ingresso venderIngresso(Cliente cliente, Sessao sessao, int tipoIngresso) {
+        if (tipoIngresso != 0 && tipoIngresso != 1) {
+            System.out.println("Tipo de ingresso inválido! " + cliente.getNome() + " precisa escolher Ingresso 0 ou 1.");
+            return null;
+        }
+        
         if (sessao.venderIngresso(cliente, tipoIngresso)) {
             Ingresso ingresso;
             if (tipoIngresso == 0) {
