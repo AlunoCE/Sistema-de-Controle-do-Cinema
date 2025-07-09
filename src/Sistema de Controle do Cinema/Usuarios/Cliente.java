@@ -14,12 +14,4 @@ public class Cliente {
     public String getCPF() {
         return cpf;
     }
-
-    public boolean comprarIngresso(Sessao sessao, int tipoIngresso) {
-        if (sessao == null) {
-            System.out.println("Sessão Inválida!");
-            return false;
-        }
-        return sessao.venderIngresso(this, tipoIngresso);
-    }
 }
