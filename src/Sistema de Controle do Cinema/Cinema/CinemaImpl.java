@@ -23,7 +23,7 @@ public class CinemaImpl implements Cinema {
         if (sala.podeSerRemovida()) {
         System.out.println("\nSala " + sala.getNumero() + " removida no cinema " + nome);
     } else {
-        System.out.println("\nNão foi possível remover pois a sala " + sala.getNumero() + " tem " + sala.getSessoesAtivas() + " sessões ativas!");
+        System.out.println("\nNão foi possível a sala " + sala.getNumero() + " pois tem " + sala.getSessoesAtivas() + " sessão ativa!");
     }
 }
 
