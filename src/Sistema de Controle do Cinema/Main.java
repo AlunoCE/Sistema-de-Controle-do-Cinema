@@ -2,6 +2,9 @@ public class Main {
     public static void main(String[] args) {
         
         CinemaImpl cinemao = new CinemaImpl("Cinemao", "Av. São Pedro");
+        System.out.println("Cinema: " + cinemao.getNome());
+        System.out.println("Endereço: " + cinemao.getEndereco());
+        System.out.println("\n");
 
         Filme volta = new Filme("De Volta à Ação", 150, "14+");
         Sala sala3 = new Sala(3, 2); 
